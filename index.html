@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <link rel="stylesheet" href="index.css">
+    <script>
+        function increment() {
+        document.getElementById("counter").innerHTML =
+          Number(document.getElementById("counter").innerHTML) + 1;
+      }
+      function decrement() {
+        if(document.getElementById("counter").innerHTML!= 0){
+        document.getElementById("counter").innerHTML =
+          document.getElementById("counter").innerHTML - 1;
+        }
+      }
+    </script>
+</head>
+<body>
+  <div class="b">
+    <div class="a">
+            <div class="c">
+            <button onclick="decrement()" style="font-size: 50px; margin:0 150px 0 0">-</button>
+            <div id="counter" style="color: white;">1</div>
+            <button onclick="increment()" style="font-size: 50px; margin:0 0 0 150px">+</button>
+            </div>
+            <div>
+    <footer style=" font-size: 15px; color: white;display: flex; justify-content: center;align-items: center;text-align: center;margin:100px 0 0 0 ;">
+        MADE WITH  <span style="color: red;">&hearts;</span>  BY BHUPINDER SINGH SAPRA
+    </footer>
+    </div>
+    </div>
+</body>
+</html>
